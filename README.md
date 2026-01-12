@@ -20,7 +20,7 @@ sudo systemctl enable --now jenkins
 
 After Setting up the accounts and install the recommended plugins including the "Docker Pipeline" Plugin, we add the creds for Docker hub and GitHub accounts in the "Credentials" Page from "Manage Jenkins".
 
-![[img_01.png]]
+![](img_01.png)
 
 ## 1. Build Docker Image from a Private GitHub Repo
 ```groovy
@@ -68,7 +68,7 @@ pipeline {
 
 This is a Jenkins pipeline that pulls a code from a private GitHub repo in the first stage then it builds a docker image from a Docker file located in the repo, then it pushes the image to a private docker hub registry.
 
-![[Pasted image 20260112222657.png]]
+![](img_04.png)
 
 > [!Warning] Disclaimer
 > The Branches are Static in this example and I believe there is a way to do it dynamically.
@@ -102,10 +102,10 @@ node {
 ```
 
 This pipeline is more about bash rather than it's an actual pipeline, and for the cron part we do it as the following.
-![[img_02.png]]
+![](img_02.png)
 
 ---
 # Conclusion 
 We built 3 pipelines and gained Jenkins experience across various topics.
 
-![[img_03.png]]
+![](img_03.png)
